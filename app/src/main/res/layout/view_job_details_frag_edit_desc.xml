@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <EditText
+        android:id="@+id/et_view_job_details_frag_edit_update_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Subject"
+        android:background="@drawable/border_background_edittext"
+        style="@style/StyleEdittextBorderOverride" />
+
+
+    <Button
+        android:id="@+id/btn_view_job_details_frag_edit_update"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Update"
+        android:layout_marginTop="5dp"
+        style="@style/customStyleButton"/>
+
+</LinearLayout>

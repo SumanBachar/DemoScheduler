@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        style="@style/customNeuporphCardEdittext">
+
+        <EditText
+            android:id="@+id/et_frag_info_subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             style="@style/customStyleEdittext"
+            android:hint="Enter Subject" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/et_frag_info_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/customStyleEdittext"
+            android:hint="Enter Description"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/data_list" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_frag_info_add_desc"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            style="@style/customNeuporphButton"
+            android:text="Add"
+            android:layout_gravity="center"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/data_list" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorSlate" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorSlate" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/data_search" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            style="@style/customNeuporphCardEdittext"
+            android:layout_gravity="end">
+
+            <EditText
+                android:id="@+id/et_frag_info_search_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textFontWeight="1"
+                style="@style/customStyleEdittext"
+                android:hint="Search"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="25dp"/>
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frag_info_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
